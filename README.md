@@ -1,14 +1,19 @@
 #BoomTown Front-End Developer Test
 
 ## Task
-Mock-up the attached dashboard UI. Treat this project the same as if you were handing over to a client for production. Once given access to this repo, you have **48 hours** to complete this project. Any commits to your repo after that will not be accepted.
+The design team just put their finishing touches on the new "BoomTown Dashboard" interface. Now it's your turn. You are tasked with building the dashboard in a responsive / adaptive, "mobile first" fashion.
+
+You'll notice that the design team only provided you with a desktop version of the dashboard. Therefore, you have full creative freedom to handle break points as you see fit. You also have full creative freedom to include tasteful interactions and animations.
+
+Once given access to this repo, you have **1 week** to complete this project. Any commits to your repo after that will not be accepted.
 
 ## Assets
-This repo contains an `assets/` directory which will give you everything you need.
+This repo contains an `assets/` directory which contains all necessary assets to build the BoomTown Dashboard.
 
-* `project.png`: Screen shots of the finished project. We realize they're not PSDs, but believe you can gather all you need. `project-navigation.png` shows an example off-canvas navigation we'd like you to mock-up as well.
-* `images/`: Used for backgrounds and avatars.
-* `icons/`: Used to construct reusable vector sets.
+* `project.png`: Screen shot of the BoomTown Dashboard.
+* `project-navigation.png`: Screen shot of the off-canvas navigation.
+* `images/`: Raw image assets.
+* `icons/`: SVG assets for iconography. Use them however you like.
 
 ## Tools
 We expect all candiates to use the following:
@@ -31,9 +36,10 @@ A few odds 'n ends that make us happy.
 * Be consistent with spacing/indenting in your code and naming conventions across your project’s assets.
 * Generated CSS and Javascript files should be compressed/minimized/optimized.
 * Only use provided image assets. These may be used to create or build additional assets if necessary - such as a sprite. Under no circumstances should a NEW image asset be created.
+* You are required to push ALL source files to your repo. Anything used to build the dashboard should be included.
 
 ## Final Thoughts
-We aren’t looking for pixel perfect design, but do expect attention to detail. We want to see how you approach the challenge and execute the finished product.
+We aren’t looking for pixel perfect design, but do expect attention to detail. We want to see how you approach the challenge and execute the finished product. Cheers!
 
 ## Screens
 ![Project low-res](assets/project-low-res.jpg)
