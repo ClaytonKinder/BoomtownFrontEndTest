@@ -8,12 +8,15 @@ You'll notice that the design team only provided you with a desktop version of t
 Once given access to this repo, you have **1 week** to complete this project. Any commits to your repo after that will not be accepted.
 
 ## Assets
-This repo contains an `assets/` directory which contains all necessary assets to build the BoomTown Dashboard.
+This repo contains an `assets/` directory which contains all necessary assets to build the BoomTown Dashboard. The font used to develop the dashboard is Open Sans.
 
 * `project.png`: Screen shot of the BoomTown Dashboard.
 * `project-navigation.png`: Screen shot of the off-canvas navigation.
 * `images/`: Raw image assets.
 * `icons/`: SVG assets for iconography. Use them however you like.
+
+The font family used is Open Sans.
+
 
 ## Tools
 We expect all candiates to use the following:
@@ -36,6 +39,7 @@ A few odds 'n ends that make us happy.
 * Be consistent with spacing/indenting in your code and naming conventions across your project’s assets.
 * Generated CSS and Javascript files should be compressed/minimized/optimized.
 * Only use the provided image assets. These may be used to create additional assets if necessary - such as a sprite. They may also be cropped and compressed.
+* Use Open Sans font.i
 * You are required to push ALL source files to your repo. Anything used to build the dashboard should be included.
 
 ## Final Thoughts
