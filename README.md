@@ -39,7 +39,7 @@ A few odds 'n ends that make us happy.
 * Be consistent with spacing/indenting in your code and naming conventions across your project’s assets.
 * Generated CSS and Javascript files should be compressed/minimized/optimized.
 * Only use the provided image assets. These may be used to create additional assets if necessary - such as a sprite. They may also be cropped and compressed.
-* Use Open Sans font.i
+* Use Open Sans font.
 * You are required to push ALL source files to your repo. Anything used to build the dashboard should be included.
 
 ## Final Thoughts
