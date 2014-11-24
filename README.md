@@ -25,7 +25,7 @@ We expect all candiates to use the following:
 * [NPM](https://www.npmjs.org/) to install packages used for build tasks.
 * [Gulp](http://gulpjs.com/) or [Grunt](http://gruntjs.com/) to write project build tasks.
 * [LESS](http://lesscss.org/) or [SASS](http://sass-lang.com/) (we prefer LESS).
-* A CSS/JS framework like [Bootstrap](http://getbootstrap.com/), [UIkit](http://getuikit.com), or [Foundation](http://foundation.zurb.com/) to demonstrate your understanding of frameworks and your ability to integrate the framework in your project’s build process.
+* Use a CSS/JS framework like [Bootstrap](http://getbootstrap.com/), [UIkit](http://getuikit.com), or [Foundation](http://foundation.zurb.com/). What you end up choosing is up to you; what we're interested in is you demonstrating your understanding of frameworks and your ability to integrate the framework in your project’s build process.
 * [GitHub](http://github.com) as your Git repo hosting service.
 * [GitHub Pages](https://pages.github.com/) to demo your completed project.
 
