@@ -32,7 +32,7 @@ We expect all candiates to use the following:
 ## Requirements
 A few odds 'n ends that make us happy.
 
-* It’s 2014, use HTML5.
+* It’s 2015, use HTML5.
 * It’s also still 2011 for some folks. Be sure IE9 users get at least a C-grade experience. Use any polyfills you deem necessary. Progressive enhancement is your friend. 
 * Make it responsive or adaptive. Actual breakpoints are up to you.
 * Write CSS and HTML in a [modular, scalable](http://www.creativebloq.com/css3/create-modular-and-scalable-css-9134351) fashion. 
