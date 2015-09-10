@@ -24,12 +24,6 @@ main {
           background-image: url('../../assets/images/zach-bg.jpg');
           background-size: cover;
           background-position: 50% 25%;
-
-          div {
-            background-image: url('../../assets/images/zach.jpg');
-            background-position: 45% 10%;
-            background-size: 125% 125%;
-          }
         }
       }
 
@@ -38,12 +32,6 @@ main {
           background-image: url('../../assets/images/sean-bg.jpg');
           background-size: cover;
           background-position: 50% 25%;
-
-          div {
-            background-image: url('../../assets/images/sean.jpg');
-            background-position: 60% 30%;
-            background-size: 175% 175%;
-          }
         }
       }
 
@@ -52,12 +40,6 @@ main {
           background-image: url('../../assets/images/craig-bg.jpg');
           background-size: 115% 115%;
           background-position: 30% 25%;
-
-          div {
-            background-image: url('../../assets/images/craig.jpg');
-            background-position: 22.5% 5%;
-            background-size: 160% 160%;
-          }
         }
       }
 
@@ -84,6 +66,7 @@ main {
 
         p {
           padding: 0 8%;
+
         }
       }
 
@@ -187,7 +170,7 @@ main {
   ***********/
 
   section.chat {
-    height: 350px;
+    height: 400px;
     background-color: white;
     .marginBottom;
     .boxShadow(2);
@@ -203,13 +186,13 @@ main {
         color: @dark-gray;
 
         img {
-          height: 17.5px;
-          width: 17.5px;
+          height: 20px;
+          width: 20px;
         }
 
         span {
           padding-left: 10px;
-          font-size: 1.05rem;
+          font-size: 1.15rem;
         }
       }
     }
@@ -217,14 +200,95 @@ main {
     .chatContentBlock {
       height: 85%;
 
-
+      > div {
+        height: 99%;
+      }
 
       .chatMessagesBlock {
         border-right: 1.5px solid @light-gray;
+
+        .chatMessageOutgoing {
+          padding-left: 10%;
+        }
+
+        .chatMessageIncoming,
+        .chatMessageOutgoing {
+          padding-top: 10px;
+          padding-bottom: 10px;
+
+          .outgoingImage,
+          .incomingImage {
+            div {
+              height: 75px;
+              width: 75px;
+            }
+          }
+
+          .outgoingMessage,
+          .incomingMessage {
+            p {
+              padding: 10px;
+              background-color: @bg;
+            }
+          }
+        }
       }
 
       .chatFormBlock {
         border-left: 1.5px solid @light-gray;
+        padding: 15px;
+
+        form {
+          height: 100%;
+
+          textarea {
+            height: 80%;
+            width: 100%;
+            resize: none;
+            padding: 20px 15px 15px;
+            font-size: 1.25rem;
+            border: 3px solid @light-gray;
+            .borderBox;
+
+            &:focus {
+              outline: 0;
+              border-color: @orange;
+            }
+
+            &::-webkit-input-placeholder {
+               color: @placeholder-gray;
+            }
+
+            &:-moz-input-placeholder {
+               color: @placeholder-gray;
+            }
+
+            &::-moz-input-placeholder {
+               color: @placeholder-gray;
+            }
+
+            &:-ms-input-placeholder {
+               color: @placeholder-gray;
+            }
+          }
+
+          input {
+            cursor: pointer;
+            margin-top: 15px;
+            width: 100%;
+            padding: 7.5px 0;
+            background-color: @orange;
+            border: 0;
+            color: white;
+            font-size: 1.15rem;
+            font-weight: lighter;
+            .transitionFast;
+
+            &:hover {
+              background-color: @dark-orange;
+            }
+          }
+        }
       }
     }
   }

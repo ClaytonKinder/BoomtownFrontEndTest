@@ -9,11 +9,11 @@
 </head>
 <body>
   <nav class="uk-navbar uk-grid">
-    <ul class="uk-navbar-nav uk-text-large uk-height-1-1 uk-width-large-1-4 uk-grid">
-      <li class="uk-flex uk-flex-center uk-flex-middle uk-height-1-1 uk-width-large-1-10 uk-padding-remove">
+    <ul class="uk-navbar-nav uk-height-1-1 uk-width-large-1-4 uk-grid">
+      <li id="mobileMenuToggle" class="uk-flex uk-flex-center uk-flex-middle uk-height-1-1 uk-width-large-2-10 uk-padding-remove">
         <i class="uk-icon-bars uk-align-center"></i>
       </li>
-      <li class="uk-flex uk-flex-left uk-flex-middle uk-height-1-1 uk-width-large-9-10">
+      <li class="uk-flex uk-flex-left uk-flex-middle uk-height-1-1 uk-width-large-8-10">
         boomtest
       </li>
     </ul>
@@ -42,7 +42,7 @@
         <section class="users uk-flex uk-flex-space-between uk-flex-middle">
           <div class="userBlock zach uk-border-rounded">
             <div class="userImageBlock">
-              <div class="userImage uk-border-circle uk-align-center"></div>
+              <div class="zachProfile userImage uk-border-circle uk-align-center"></div>
             </div>
             <div class="userInfoBlock">
               <h2 class="uk-margin-remove">Zach Schnackel</h2>
@@ -65,7 +65,7 @@
           </div>
           <div class="userBlock sean uk-border-rounded">
             <div class="userImageBlock">
-              <div class="userImage uk-border-circle uk-align-center"></div>
+              <div class="seanProfile userImage uk-border-circle uk-align-center"></div>
             </div>
             <div class="userInfoBlock">
               <h2 class="uk-margin-remove">Sean McCambridge</h2>
@@ -88,7 +88,7 @@
           </div>
           <div class="userBlock craig uk-border-rounded">
             <div class="userImageBlock">
-              <div class="userImage uk-border-circle uk-align-center"></div>
+              <div class="craigProfile userImage uk-border-circle uk-align-center"></div>
             </div>
             <div class="userInfoBlock">
               <h2 class="uk-margin-remove">Craig Anthony</h2>
@@ -177,11 +177,43 @@
             </div>
           </header>
           <div class="chatContentBlock uk-grid">
-            <div class="chatMessagesBlock uk-height-1-1 uk-width-large-3-5">
-
+            <div class="chatMessagesBlock uk-width-large-3-5">
+              <div class="chatMessageIncoming uk-grid">
+                <div class="incomingImage uk-width-large-2-10">
+                  <div class="zachProfile userImage uk-border-circle uk-align-center"></div>
+                </div>
+                <div class="incomingMessage uk-width-large-7-10 uk-flex uk-flex-middle">
+                  <p class="uk-border-rounded">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum, ipsa, blanditiis? Eius enim, laboriosam.
+                  </p>
+                </div>
+              </div>
+              <div class="chatMessageOutgoing uk-margin-remove uk-grid">
+                <div class="outgoingMessage uk-float-right uk-width-large-8-10">
+                  <p class="uk-border-rounded">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit, non voluptates voluptatem? Totam sapiente deleniti nostrum, quidem ab mollitia excepturi placeat.
+                  </p>
+                </div>
+                <div class="outgoingImage uk-width-large-2-10 uk-float-right uk-flex uk-flex-middle">
+                  <div class="seanProfile userImage uk-border-circle uk-align-center"></div>
+                </div>
+              </div>
+              <div class="chatMessageIncoming uk-margin-remove uk-grid">
+                <div class="incomingImage uk-width-large-2-10">
+                  <div class="zachProfile userImage uk-border-circle uk-align-center"></div>
+                </div>
+                <div class="incomingMessage uk-width-large-7-10 uk-flex uk-flex-middle">
+                  <p class="uk-border-rounded">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto deserunt doloremque excepturi eveniet.
+                  </p>
+                </div>
+              </div>
             </div>
-            <div class="chatFormBlock uk-height-1-1 uk-width-large-2-5">
-
+            <div class="chatFormBlock uk-width-large-2-5">
+              <form>
+                <textarea class="uk-border-rounded" placeholder="compose message"></textarea>
+                <input class="uk-border-rounded" type="submit" value="send message"></input>
+              </form>
             </div>
           </div>
         </section>
