@@ -5,17 +5,20 @@
 @bg: #F5F7FA;
 @light-blue: #57CCF0;
 @blue: #1CBEEF;
+@negative-red: #BD2D2D;
 @red: #679A00;
 @dark-red: #B00000;
+@positive-green: #9FBE62;
 @green: #679900;
 @orange: #EB7F00;
 @dark-orange: #C96B00;
 @light-gray: #F5F5F5;
 @placeholder-gray: #EAEAEA;
+@gray: #898989;
 @dark-gray: #727272;
 @activity-email: #B10404;
-@activity-text: #E87100;
-@activity-call: #629507;
+@activity-sms: #E87100;
+@activity-phone: #629507;
 
 /****************************
 ### MIXINS
@@ -85,6 +88,10 @@
 /****************************
 ### GENERAL
 ****************************/
+
+*, *:before, *:after {
+  box-sizing: border-box;
+}
 
 body {
   background-color: @bg;

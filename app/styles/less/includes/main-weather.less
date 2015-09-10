@@ -1,0 +1,64 @@
+section.weather {
+  height: 200px;
+  .marginBottom;
+  .boxShadow(2);
+
+  .weatherBlock {
+    background-color: white;
+    border-right: 2px solid @light-gray;
+  }
+
+  .weatherBlock1 {
+    background-color: @light-blue;
+
+    img {
+      height: 75%;
+      width: 75%;
+    }
+  }
+
+  .weatherBlock2 {
+    padding-left: 35px;
+
+    .weatherTemperature {
+      height: 18%;
+      font-size: 3.75rem;
+      font-weight: 600;
+    }
+
+    .weatherStatus {
+      font-size: 1.5rem;
+    }
+  }
+
+  .weatherBlock3,
+  .weatherBlock4,
+  .weatherBlock5 {
+    .forecastBlock {
+      height: 85%;
+      width: 100%;
+      font-size: 1.1rem;
+
+      > div {
+        height: 20%;
+      }
+
+      .forecastTime {
+        color: @light-blue;
+      }
+
+      .forecastIcon {
+        height: 40%;
+
+        img {
+          height: 100%;
+        }
+      }
+
+      .forecastPercentage {
+        position: relative;
+        top: 2.5px;
+      }
+    }
+  }
+}

@@ -1,0 +1,51 @@
+section.usage {
+  height: 350px;
+  background-color: white;
+  .marginBottom;
+  .boxShadow(2);
+
+  header.usage {
+    height: 60px;
+    padding: 0 20px;
+    border-bottom: 3px solid @light-gray;
+  }
+
+  main.usage {
+    padding: 10px;
+
+    table {
+      height: 100%;
+      width: 100%;
+      color: @dark-gray;
+      cellspacing: 0;
+
+      tr {
+        &:nth-child(even) {
+          background-color: @bg;
+        }
+
+        > * {
+          padding: 10.5px 0;
+        }
+      }
+
+      th {
+        font-weight: bolder;
+
+        span {
+          font-size: 0.8rem;
+        }
+      }
+
+      td {
+        &.positiveChange {
+          color: @positive-green;
+        }
+
+        &.negativeChange {
+          color: @negative-red;
+        }
+      }
+    }
+  }
+}

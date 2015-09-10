@@ -1,0 +1,87 @@
+section.users {
+  .marginBottom;
+
+  .userBlock {
+    position: relative;
+    height: 400px;
+    width: 32%;
+    text-align: center;
+    background: white;
+    .boxShadow(2);
+
+    &.zach {
+      .userImageBlock {
+        background-image: url('../../assets/images/zach-bg.jpg');
+        background-size: cover;
+        background-position: 50% 25%;
+      }
+    }
+
+    &.sean {
+      .userImageBlock {
+        background-image: url('../../assets/images/sean-bg.jpg');
+        background-size: cover;
+        background-position: 50% 25%;
+      }
+    }
+
+    &.craig {
+      .userImageBlock {
+        background-image: url('../../assets/images/craig-bg.jpg');
+        background-size: 115% 115%;
+        background-position: 30% 25%;
+      }
+    }
+
+    .userImageBlock {
+      height: 33.33%;
+      border-top-left-radius: 4px;
+      border-top-right-radius: 4px;
+
+     div {
+       position: relative;
+       top: 45px;
+       height: 125px;
+       width: 125px;
+       border: 1.5px solid @light-blue;
+     }
+    }
+
+    .userInfoBlock {
+      padding-top: 50px;
+
+      h4 {
+        color: @light-blue;
+      }
+
+      p {
+        padding: 0 8%;
+
+      }
+    }
+
+    .userSocialBlock {
+      height: 12.5%;
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      background-color: @orange;
+
+      .userSocial {
+        cursor: pointer;
+        .transitionFast;
+
+        &:hover {
+          background-color: @dark-orange;
+        }
+
+        img {
+          height: 50%;
+          width: 50%;
+          fill: white;
+        }
+      }
+    }
+  }
+}
