@@ -1,0 +1,231 @@
+/****************************
+### MAIN
+****************************/
+
+main {
+
+  /***********
+  USERS
+  ***********/
+
+  section.users {
+    .marginBottom;
+
+    .userBlock {
+      position: relative;
+      height: 400px;
+      width: 32%;
+      text-align: center;
+      background: white;
+      .boxShadow(2);
+
+      &.zach {
+        .userImageBlock {
+          background-image: url('../../assets/images/zach-bg.jpg');
+          background-size: cover;
+          background-position: 50% 25%;
+
+          div {
+            background-image: url('../../assets/images/zach.jpg');
+            background-position: 45% 10%;
+            background-size: 125% 125%;
+          }
+        }
+      }
+
+      &.sean {
+        .userImageBlock {
+          background-image: url('../../assets/images/sean-bg.jpg');
+          background-size: cover;
+          background-position: 50% 25%;
+
+          div {
+            background-image: url('../../assets/images/sean.jpg');
+            background-position: 60% 30%;
+            background-size: 175% 175%;
+          }
+        }
+      }
+
+      &.craig {
+        .userImageBlock {
+          background-image: url('../../assets/images/craig-bg.jpg');
+          background-size: 115% 115%;
+          background-position: 30% 25%;
+
+          div {
+            background-image: url('../../assets/images/craig.jpg');
+            background-position: 22.5% 5%;
+            background-size: 160% 160%;
+          }
+        }
+      }
+
+      .userImageBlock {
+        height: 33.33%;
+        border-top-left-radius: 4px;
+        border-top-right-radius: 4px;
+
+       div {
+         position: relative;
+         top: 45px;
+         height: 125px;
+         width: 125px;
+         border: 1.5px solid @light-blue;
+       }
+      }
+
+      .userInfoBlock {
+        padding-top: 50px;
+
+        h4 {
+          color: @light-blue;
+        }
+
+        p {
+          padding: 0 8%;
+        }
+      }
+
+      .userSocialBlock {
+        height: 12.5%;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        background-color: @orange;
+
+        .userSocial {
+          cursor: pointer;
+          .transitionFast;
+
+          &:hover {
+            background-color: @dark-orange;
+          }
+
+          img {
+            height: 50%;
+            width: 50%;
+            fill: white;
+          }
+        }
+      }
+    }
+  }
+
+  /***********
+  WEATHER
+  ***********/
+
+  section.weather {
+    height: 200px;
+    .marginBottom;
+    .boxShadow(2);
+
+    .weatherBlock {
+      background-color: white;
+      border-right: 2px solid @light-gray;
+    }
+
+    .weatherBlock1 {
+      background-color: @light-blue;
+
+      img {
+        height: 75%;
+        width: 75%;
+      }
+    }
+
+    .weatherBlock2 {
+      padding-left: 35px;
+
+      .weatherTemperature {
+        height: 18%;
+        font-size: 3.75rem;
+        font-weight: 600;
+      }
+
+      .weatherStatus {
+        font-size: 1.5rem;
+      }
+    }
+
+    .weatherBlock3,
+    .weatherBlock4,
+    .weatherBlock5 {
+      .forecastBlock {
+        height: 85%;
+        width: 100%;
+        font-size: 1.1rem;
+
+        > div {
+          height: 20%;
+        }
+
+        .forecastTime {
+          color: @light-blue;
+        }
+
+        .forecastIcon {
+          height: 40%;
+
+          img {
+            height: 100%;
+          }
+        }
+
+        .forecastPercentage {
+          position: relative;
+          top: 2.5px;
+        }
+      }
+    }
+  }
+
+  /***********
+  CHAT
+  ***********/
+
+  section.chat {
+    height: 350px;
+    background-color: white;
+    .marginBottom;
+    .boxShadow(2);
+
+    header.chat {
+      height: 15%;
+      padding: 0 20px;
+      border-bottom: 3px solid @light-gray;
+
+      div {
+        background-color: @bg;
+        padding: 7.5px;
+        color: @dark-gray;
+
+        img {
+          height: 17.5px;
+          width: 17.5px;
+        }
+
+        span {
+          padding-left: 10px;
+          font-size: 1.05rem;
+        }
+      }
+    }
+
+    .chatContentBlock {
+      height: 85%;
+
+
+
+      .chatMessagesBlock {
+        border-right: 1.5px solid @light-gray;
+      }
+
+      .chatFormBlock {
+        border-left: 1.5px solid @light-gray;
+      }
+    }
+  }
+}
