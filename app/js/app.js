@@ -26,7 +26,15 @@ $(window).load(function () {
 
 // Toggles the side-menu
 $('body').on('click', '#sideMenuToggle', function(){
-  alert('You clicked me!');
+  $('.sideNavbarBlock').toggleClass('sideNavbarOpen');
+  $('.sideNavbarMask').toggleClass('sideNavbarOpen');
+  $('.contentWrapper').toggleClass('sideNavbarOpen');
+})
+
+$('body').on('click', '.sideNavbarMask', function(){
+  $('.sideNavbarBlock').removeClass('sideNavbarOpen');
+  $('.sideNavbarMask').removeClass('sideNavbarOpen');
+  $('.contentWrapper').removeClass('sideNavbarOpen');
 })
 
 // Controls the custom checkboxes in the first section of the sidebar settings

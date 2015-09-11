@@ -6,18 +6,16 @@
 ### MIXINS
 ****************************/
 
-.taskConstructor(@task, @color, @width) {
-  @task {
-    .taskText {
-      .taskTextPercentage {
-        background-color: @color;
-      }
+.taskConstructor(@color, @width) {
+  .taskText {
+    .taskTextPercentage {
+      background-color: @color;
     }
-    .taskBar {
-      .taskBarProgress {
-        width: @width;
-        background-color: @color;
-      }
+  }
+  .taskBar {
+    .taskBarProgress {
+      width: @width;
+      background-color: @color;
     }
   }
 }
@@ -385,19 +383,19 @@ aside {
         .task {
 
           &.update {
-            .taskConstructor(.update, @light-blue, 50%);
+            .taskConstructor(@light-blue, 50%);
           }
 
           &.build {
-            .taskConstructor(.buid, @orange, 75%);
+            .taskConstructor(@orange, 75%);
           }
 
           &.convert {
-            .taskConstructor(.convert, @green, 25%);
+            .taskConstructor(@green, 25%);
           }
 
           &.compress {
-            .taskConstructor(.compress, @dark-red, 100%);
+            .taskConstructor(@dark-red, 100%);
           }
 
           .taskText {
