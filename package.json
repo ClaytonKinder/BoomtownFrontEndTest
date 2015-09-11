@@ -2,7 +2,7 @@
   "name": "Boomtown",
   "version": "1.0.0",
   "description": "Front-end test for Boomtown",
-  "main": "gulpfile.js",
+  "main": "app/index.html",
   "dependencies": {
     "gulp-autoprefixer": "^3.0.1",
     "gulp": "^3.9.0",
