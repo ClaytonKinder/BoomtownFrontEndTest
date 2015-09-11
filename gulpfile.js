@@ -10,11 +10,11 @@ var livereload = require('gulp-livereload');
 var reload = browserSync.reload;
 
 gulp.task('less', function() {
-  return gulp.src('./app/styles/less/styles.less')  // only compile the entry file
+  return gulp.src('./styles/less/styles.less')  // only compile the entry file
     .pipe(less())
     .pipe(prefix("last 8 version", "> 1%", "ie 8", "ie 7"), {cascade:true})
     .pipe(minifyCSS())
-    .pipe(gulp.dest('./app/styles/css'))
+    .pipe(gulp.dest('./styles/css'))
     .pipe(livereload());
 });
 
@@ -22,7 +22,7 @@ gulp.task('less', function() {
 gulp.task('serve', function() {
   browserSync({
     server: {
-      baseDir: 'app',
+      baseDir: './',
     },
     open: false
   });
