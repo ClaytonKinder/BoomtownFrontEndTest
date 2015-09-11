@@ -5,6 +5,8 @@
 @bg: #F5F7FA;
 @light-blue: #57CCF0;
 @blue: #1CBEEF;
+@meddark-blue: #097EE9;
+@dark-blue: #057AE7;
 @negative-red: #BD2D2D;
 @red: #679A00;
 @dark-red: #B00000;
@@ -13,8 +15,9 @@
 @orange: #EB7F00;
 @dark-orange: #C96B00;
 @light-gray: #F5F5F5;
+@medlight-gray: #CCCCCC;
 @placeholder-gray: #EAEAEA;
-@gray: #898989;
+@gray: #878787;
 @dark-gray: #727272;
 @activity-email: #B10404;
 @activity-sms: #E87100;
@@ -101,6 +104,32 @@ body {
   padding: 50px 15px;
 }
 
+.borderTopRounded {
+  border-top-left-radius: 4px;
+  border-top-right-radius: 4px;
+}
+
+.borderBottomRounded {
+  border-bottom-left-radius: 4px;
+  border-bottom-right-radius: 4px;
+}
+
+.borderTopLeftRounded {
+  border-top-left-radius: 4px;
+}
+
+.borderTopRightRounded {
+  border-top-right-radius: 4px;
+}
+
+.borderBottomLeftRounded {
+  border-bottom-left-radius: 4px;
+}
+
+.borderBottomRightRounded {
+  border-bottom-right-radius: 4px;
+}
+
 /****************************
 ### USER-SPECIFIC
 ****************************/
@@ -128,6 +157,7 @@ div.craigProfile {
 ****************************/
 
 @import 'includes/navbar.less';
+@import 'includes/side-navbar.less';
 @import 'includes/header.less';
 @import 'includes/main.less';
 @import 'includes/aside.less';

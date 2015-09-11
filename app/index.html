@@ -8,414 +8,55 @@
   <link rel="stylesheet" type="text/css" href="styles/css/styles.css">
 </head>
 <body>
-  <nav class="uk-navbar uk-grid">
-    <ul class="uk-navbar-nav uk-height-1-1 uk-width-large-1-4 uk-grid">
-      <li id="mobileMenuToggle" class="uk-flex uk-flex-center uk-flex-middle uk-height-1-1 uk-width-large-2-10 uk-padding-remove">
-        <i class="uk-icon-bars uk-align-center"></i>
-      </li>
-      <li class="uk-flex uk-flex-left uk-flex-middle uk-height-1-1 uk-width-large-8-10">
-        boomtest
-      </li>
-    </ul>
-    <ul class="uk-navbar-nav uk-text-large uk-height-1-1 uk-width-large-3-4 uk-grid">
-      <li class="uk-flex uk-flex-center uk-flex-middle uk-height-1-1 uk-width-1-3">
-        <i class="uk-icon-calendar"></i>
-      </li>
-      <li class="uk-flex uk-flex-center uk-flex-middle uk-height-1-1 uk-width-1-3">
-        <i class="uk-icon-tasks"></i>
-      </li>
-      <li class="uk-flex uk-flex-center uk-flex-middle uk-height-1-1 uk-width-1-3">
-        <i class="uk-icon-cog"></i>
-      </li>
-    </ul>
-  </nav>
+  <!-- NAVBAR -->
+  <div id="navbarInclude"></div>
+  <!-- END NAVBAR -->
+
+  <!-- SIDE NAVBAR -->
+  <div id="sideNavbarInclude"></div>
+  <!-- END SIDE NAVBAR -->
 
   <div class="contentWrapper">
-    <header class="hero uk-width-1-1 uk-border-rounded uk-flex uk-flex-center uk-flex-middle">
-      <div class="heroBlock uk-flex uk-flex-center uk-flex-middle">
-        <h1 class="uk-h1">BoomTown Dashboard</h1>
-      </div>
-    </header>
+    <!-- HEADER -->
+    <div id="headerInclude"></div>
+    <!-- END HEADER -->
 
     <section class="uk-width-1-1 uk-grid">
       <main class="uk-width-large-3-4">
-        <section class="users uk-flex uk-flex-space-between uk-flex-middle">
-          <div class="userBlock zach uk-border-rounded">
-            <div class="userImageBlock">
-              <div class="zachProfile userImage uk-border-circle uk-align-center"></div>
-            </div>
-            <div class="userInfoBlock">
-              <h2 class="uk-margin-remove">Zach Schnackel</h2>
-              <h4 class="uk-margin-remove">Mr. White</h4>
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tenetur dicta, nam earum fugiat illum quas ab quibusdam.
-              </p>
-            </div>
-            <div class="userSocialBlock uk-grid">
-              <div class="userSocial uk-width-1-3 uk-height-1-1 uk-vertical-align uk-padding-remove">
-                <img class="uk-vertical-align-middle" src="assets/icons/facebook.svg" alt="Facebook logo">
-              </div>
-              <div class="userSocial uk-width-1-3 uk-height-1-1 uk-vertical-align uk-padding-remove">
-                <img class="uk-vertical-align-middle" src="assets/icons/twitter.svg" alt="Twitter logo">
-              </div>
-              <div class="userSocial uk-width-1-3 uk-height-1-1 uk-vertical-align uk-padding-remove">
-                <img class="uk-vertical-align-middle" src="assets/icons/github.svg" alt="Github logo">
-              </div>
-            </div>
-          </div>
-          <div class="userBlock sean uk-border-rounded">
-            <div class="userImageBlock">
-              <div class="seanProfile userImage uk-border-circle uk-align-center"></div>
-            </div>
-            <div class="userInfoBlock">
-              <h2 class="uk-margin-remove">Sean McCambridge</h2>
-              <h4 class="uk-margin-remove">Mr. Pink</h4>
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis inventore odio asperiores, labore porro repellendus.
-              </p>
-            </div>
-            <div class="userSocialBlock uk-grid">
-              <div class="userSocial uk-width-1-3 uk-height-1-1 uk-vertical-align uk-padding-remove">
-                <img class="uk-vertical-align-middle" src="assets/icons/facebook.svg" alt="Facebook logo">
-              </div>
-              <div class="userSocial uk-width-1-3 uk-height-1-1 uk-vertical-align uk-padding-remove">
-                <img class="uk-vertical-align-middle" src="assets/icons/twitter.svg" alt="Twitter logo">
-              </div>
-              <div class="userSocial uk-width-1-3 uk-height-1-1 uk-vertical-align uk-padding-remove">
-                <img class="uk-vertical-align-middle" src="assets/icons/github.svg" alt="Github logo">
-              </div>
-            </div>
-          </div>
-          <div class="userBlock craig uk-border-rounded">
-            <div class="userImageBlock">
-              <div class="craigProfile userImage uk-border-circle uk-align-center"></div>
-            </div>
-            <div class="userInfoBlock">
-              <h2 class="uk-margin-remove">Craig Anthony</h2>
-              <h4 class="uk-margin-remove">Mr. Blue</h4>
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magni similique iusto temporibus pariatur voluptatem.
-              </p>
-            </div>
-            <div class="userSocialBlock uk-grid">
-              <div class="userSocial uk-width-1-3 uk-height-1-1 uk-vertical-align">
-                <img class="uk-vertical-align-middle" src="assets/icons/facebook.svg" alt="Facebook logo">
-              </div>
-              <div class="userSocial uk-width-1-3 uk-height-1-1 uk-vertical-align">
-                <img class="uk-vertical-align-middle" src="assets/icons/twitter.svg" alt="Twitter logo">
-              </div>
-              <div class="userSocial uk-width-1-3 uk-height-1-1 uk-vertical-align">
-                <img class="uk-vertical-align-middle" src="assets/icons/github.svg" alt="Github logo">
-              </div>
-            </div>
-          </div>
-        </section>
-        <section class="weather uk-grid">
-          <div class="weatherBlock weatherBlock1 uk-width-large-1-5 uk-height-1-1 uk-vertical-align uk-text-center">
-            <img class="uk-vertical-align-middle" src="assets/icons/sun.svg" alt="Sun icon">
-          </div>
-          <div class="weatherBlock weatherBlock2 uk-width-large-1-5 uk-height-1-1 uk-flex uk-flex-column uk-flex-center uk-flex-left">
-            <div class="weatherTemperature">75°</div>
-            <div class="weatherStatus">CLEAR</div>
-          </div>
-          <div class="weatherBlock weatherBlock3 uk-width-large-1-5 uk-height-1-1 uk-flex uk-flex-column uk-flex-center uk-flex-middle">
-            <div class="forecastBlock uk-text-center">
-              <div class="forecastTime uk-flex uk-flex-middle uk-flex-center">
-                8AM
-              </div>
-              <div class="forecastIcon">
-                <img src="assets/icons/rainy.svg" alt="Raincloud icon">
-              </div>
-              <div class="forecastPercentage uk-flex uk-flex-middle uk-flex-center">
-                20%
-              </div>
-              <div class="forecastTemperature uk-flex uk-flex-middle uk-flex-center">
-                67°
-              </div>
-            </div>
-          </div>
-          <div class="weatherBlock weatherBlock4 uk-width-large-1-5 uk-height-1-1 uk-flex uk-flex-column uk-flex-center uk-flex-middle">
-            <div class="forecastBlock uk-text-center">
-              <div class="forecastTime uk-flex uk-flex-middle uk-flex-center">
-                1PM
-              </div>
-              <div class="forecastIcon">
-                <img src="assets/icons/rainy.svg" alt="Raincloud icon">
-              </div>
-              <div class="forecastPercentage uk-flex uk-flex-middle uk-flex-center">
-                10%
-              </div>
-              <div class="forecastTemperature uk-flex uk-flex-middle uk-flex-center">
-                70°
-              </div>
-            </div>
-          </div>
-          <div class="weatherBlock weatherBlock5 uk-width-large-1-5 uk-height-1-1 uk-flex uk-flex-column uk-flex-center uk-flex-middle">
-            <div class="forecastBlock uk-text-center">
-              <div class="forecastTime uk-flex uk-flex-middle uk-flex-center">
-                3PM
-              </div>
-              <div class="forecastIcon">
-                <img src="assets/icons/cloudy.svg" alt="Cloud icon">
-              </div>
-              <div class="forecastPercentage uk-flex uk-flex-middle uk-flex-center">
-                5%
-              </div>
-              <div class="forecastTemperature uk-flex uk-flex-middle uk-flex-center">
-                74°
-              </div>
-            </div>
-          </div>
-        </section>
+        <!-- MAIN USERS -->
+        <div id="mainUsersInclude"></div>
+        <!-- END MAIN USERS -->
 
-        <section class="chat">
-          <header class="chat uk-flex uk-flex-middle uk-flex-space-between">
-            <h2 class="uk-margin-remove">Team Chat Messages</h2>
-            <div class="uk-flex uk-flex-middle uk-flex-space-around uk-border-rounded">
-              <img src="assets/icons/chat-email.svg" alt="Envelope icon">
-              <span>view all messages</span>
-            </div>
-          </header>
-          <main class="chat uk-grid">
-            <div class="chatMessagesBlock uk-width-large-3-5">
-              <div class="chatMessageIncoming uk-grid">
-                <div class="incomingImage uk-width-large-2-10">
-                  <div class="zachProfile userImage uk-border-circle uk-align-center"></div>
-                </div>
-                <div class="incomingMessage uk-width-large-7-10 uk-flex uk-flex-middle">
-                  <p class="uk-border-rounded">
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum, ipsa, blanditiis? Eius enim, laboriosam.
-                  </p>
-                </div>
-              </div>
-              <div class="chatMessageOutgoing uk-margin-remove uk-grid">
-                <div class="outgoingMessage uk-float-right uk-width-large-8-10">
-                  <p class="uk-border-rounded">
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit, non voluptates voluptatem? Totam sapiente deleniti nostrum, quidem ab mollitia excepturi placeat.
-                  </p>
-                </div>
-                <div class="outgoingImage uk-width-large-2-10 uk-float-right uk-flex uk-flex-middle">
-                  <div class="seanProfile userImage uk-border-circle uk-align-center"></div>
-                </div>
-              </div>
-              <div class="chatMessageIncoming uk-margin-remove uk-grid">
-                <div class="incomingImage uk-width-large-2-10">
-                  <div class="zachProfile userImage uk-border-circle uk-align-center"></div>
-                </div>
-                <div class="incomingMessage uk-width-large-7-10 uk-flex uk-flex-middle">
-                  <p class="uk-border-rounded">
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto deserunt doloremque excepturi eveniet.
-                  </p>
-                </div>
-              </div>
-            </div>
-            <div class="chatFormBlock uk-width-large-2-5">
-              <form>
-                <textarea class="uk-border-rounded" placeholder="compose message"></textarea>
-                <input class="uk-border-rounded" type="submit" value="send message"></input>
-              </form>
-            </div>
-          </main>
-        </section>
-        <section class="usage">
-          <header class="usage uk-flex uk-flex-middle uk-flex-left">
-            <h2 class="uk-margin-remove">Browser & OS</h2>
-          </header>
-          <main class="usage">
-            <table class="uk-text-center" cellspacing="0">
-              <tr>
-                <th>
-                  Browser
-                </th>
-                <th>
-                  Operating System
-                </th>
-                <th>
-                  Site Visits <span>▼</span>
-                </th>
-                <th>
-                  New Visits
-                </th>
-                <th>
-                  30 Day Change
-                </th>
-              </tr>
-              <tr>
-                <td>
-                  Chrome
-                </td>
-                <td>
-                  Macintosh
-                </td>
-                <td>
-                  10,223
-                </td>
-                <td>
-                  87.34%
-                </td>
-                <td class="positiveChange">
-                  +11%
-                </td>
-              </tr>
-              <tr>
-                <td>
-                  Chrome
-                </td>
-                <td>
-                  Windows
-                </td>
-                <td>
-                  8,675
-                </td>
-                <td>
-                  55.51%
-                </td>
-                <td class="negativeChange">
-                  -9%
-                </td>
-              </tr>
-              <tr>
-                <td>
-                  Firefox
-                </td>
-                <td>
-                  Windows
-                </td>
-                <td>
-                  8,214
-                </td>
-                <td>
-                  39.55%
-                </td>
-                <td class="positiveChange">
-                  +25%
-                </td>
-              </tr>
-              <tr>
-                <td>
-                  Internet Explorer
-                </td>
-                <td>
-                  Windows
-                </td>
-                <td>
-                  3,639
-                </td>
-                <td>
-                  29.88%
-                </td>
-                <td class="negativeChange">
-                  -33%
-                </td>
-              </tr>
-              <tr>
-                <td>
-                  Safari
-                </td>
-                <td>
-                  Macintosh
-                </td>
-                <td>
-                  40
-                </td>
-                <td>
-                  19.37%
-                </td>
-                <td class="positiveChange">
-                  +2%
-                </td>
-              </tr>
-            </table>
-          </main>
-        </section>
+        <!-- MAIN WEATHER -->
+        <div id="mainWeatherInclude"></div>
+        <!-- END MAIN WEATHER -->
+
+        <!-- MAIN CHAT -->
+        <div id="mainChatInclude"></div>
+        <!-- END MAIN CHAT -->
+
+        <!-- MAIN USAGE -->
+        <div id="mainUsageInclude"></div>
+        <!-- END USAGE CHAT -->
       </main>
 
       <aside class="uk-width-large-1-4">
-        <section class="activities uk-border-rounded">
-          <header class="activities asidePadding uk-flex uk-flex-bottom uk-flex-space-between">
-            <h2 class="uk-margin-remove">Latest Activities</h2>
-            <span class="smallGray">4/14</span>
-          </header>
-          <main class="activities">
-            <div class="activityBlock asidePadding uk-flex uk-flex-middle">
-              <div class="activity uk-flex">
-                <div class="activityIcon uk-flex uk-flex-center uk-flex-middle">
-                  <img src="assets/icons/email.svg" alt="Email icon">
-                </div>
-                <div class="activityEvent email">
-                  <div class="activityEventName">
-                    NEW EMAIL
-                  </div>
-                  <div class="activityEventDetails">
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                  </div>
-                </div>
-                <div class="activityTime uk-text-right">
-                    <span class="smallGray">10m</span>
-                </div>
-              </div>
-            </div>
-            <div class="activityBlock asidePadding uk-flex uk-flex-middle">
-              <div class="activity uk-flex">
-                <div class="activityIcon uk-flex uk-flex-center uk-flex-middle">
-                  <img src="assets/icons/sms.svg" alt="SMS icon">
-                </div>
-                <div class="activityEvent sms">
-                  <div class="activityEventName">
-                    NEW TEXT
-                  </div>
-                  <div class="activityEventDetails">
-                    Lorem ipsum dolor.
-                  </div>
-                </div>
-                <div class="activityTime uk-text-right">
-                    <span class="smallGray">1h</span>
-                </div>
-              </div>
-            </div>
-            <div class="activityBlock asidePadding uk-flex uk-flex-middle">
-              <div class="activity uk-flex">
-                <div class="activityIcon uk-flex uk-flex-center uk-flex-middle">
-                  <img src="assets/icons/phone.svg" alt="Phone icon">
-                </div>
-                <div class="activityEvent phone">
-                  <div class="activityEventName">
-                    NEW CALL
-                  </div>
-                  <div class="activityEventDetails">
-                      Quam, rerum blanditiis ex repellendus provident minima.
-                  </div>
-                </div>
-                <div class="activityTime uk-text-right">
-                    <span class="smallGray">8h</span>
-                </div>
-              </div>
-            </div>
-            <div class="activityBlock asidePadding uk-flex uk-flex-middle">
-              <div class="activity uk-flex">
-                <div class="activityIcon uk-flex uk-flex-center uk-flex-middle">
-                  <img src="assets/icons/users.svg" alt="Users icon">
-                </div>
-                <div class="activityEvent meeting">
-                  <div class="activityEventName">
-                    MEETING SCHEDULED
-                  </div>
-                  <div class="activityEventDetails">
-                    On 10/12/2015 09:00 am
-                  </div>
-                </div>
-                <div class="activityTime uk-text-right">
-                    <span class="smallGray">8h</span>
-                </div>
-              </div>
-            </div>
-          </main>
-        </section>
+        <!-- ASIDE ACTIVITIES -->
+        <div id="asideActivitiesInclude"></div>
+        <!-- END ASIDE ACTIVITIES -->
+
+        <!-- ASIDE SETTINGS -->
+        <div id="asideSettingsInclude"></div>
+        <!-- END ASIDE SETTINGS -->
+
+        <!-- ASIDE TASKS -->
+        <div id="asideTasksInclude"></div>
+        <!-- END ASIDE TASKS -->
       </aside>
     </section>
   </div>
 
-  <img style="margin-top: 100px" src="assets/project.png">
+  <img style="margin-top: 100px" src="assets/project-navigation.png">
 
   <script type="text/javascript" src="bower_components/jquery/dist/jquery.min.js"></script>
   <script type="text/javascript" src="js/app.js"></script>
