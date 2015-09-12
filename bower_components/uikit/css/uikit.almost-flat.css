@@ -479,11 +479,11 @@ iframe {
     padding-left: 30px;
   }
   /* Vertical */
-  .uk-grid + .uk-grid,
+  /* .uk-grid + .uk-grid,
   .uk-grid-margin,
   .uk-grid > * > .uk-panel + .uk-panel {
     margin-top: 35px;
-  }
+  } */
 }
 /*
  * Collapse gutter
