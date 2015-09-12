@@ -10,9 +10,15 @@ section.chat {
     border-bottom: 3px solid @light-gray;
 
     div {
+      cursor: pointer;
       background-color: @bg;
       padding: 7.5px;
       color: @dark-gray;
+      .transitionFast;
+
+      &:hover {
+        background-color: @medlight-gray;
+      }
 
       img {
         height: 20px;

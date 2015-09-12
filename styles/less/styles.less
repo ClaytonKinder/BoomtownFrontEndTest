@@ -127,14 +127,22 @@ body {
 }
 
 .contentWrapper {
-  padding: 50px 15px;
   position: relative;
   left: 0;
   .transitionMed;
 
   &.sideNavbarOpen {
-    left: 300px;
+    left: 25%;
   }
+}
+
+.contentBlock {
+  max-width: 1800px;
+  margin: 0 auto;
+  padding: 95px 15px 50px;
+  position: relative;
+  left: 0;
+  .transitionMed;
 }
 
 /****************************
@@ -168,3 +176,4 @@ div.craigProfile {
 @import 'includes/header.less';
 @import 'includes/main.less';
 @import 'includes/aside.less';
+@import 'includes/queries.less';

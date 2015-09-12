@@ -1,0 +1,56 @@
+section.tasks {
+  height: 325px;
+
+  header.tasks {
+    height: 15%;
+    padding: 7.5px 0px;
+  }
+
+  main.tasks {
+    height: 85%;
+
+    .taskBlock {
+      height: 25%;
+
+      .task {
+
+        &.update {
+          .taskConstructor(@light-blue, 50%);
+        }
+
+        &.build {
+          .taskConstructor(@orange, 75%);
+        }
+
+        &.convert {
+          .taskConstructor(@green, 25%);
+        }
+
+        &.compress {
+          .taskConstructor(@dark-red, 100%);
+        }
+
+        .taskText {
+          .taskTextName {
+            color: @gray;
+          }
+          .taskTextPercentage {
+            color: white;
+            font-size: 0.85rem;
+            padding: 2px 4px;
+          }
+        }
+
+        .taskBar {
+          margin-top: 7.5px;
+          height: 12.5px;
+          background-color: @light-gray;
+
+          .taskBarProgress {
+            height: 100%;
+          }
+        }
+      }
+    }
+  }
+}

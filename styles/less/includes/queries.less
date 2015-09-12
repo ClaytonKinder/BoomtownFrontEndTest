@@ -1,0 +1,185 @@
+/****************************
+### QUERIES
+****************************/
+
+/***********
+GENERAL
+***********/
+
+@media (max-width: 480px) {
+  .contentBlock {
+    padding: 95px 5px 50px;
+  }
+}
+
+/***********
+NAVBAR
+***********/
+
+@media (max-width: 768px) {
+  nav.uk-navbar {
+    ul:first-of-type {
+      li:last-of-type {
+        display: none;
+      }
+    }
+    ul:last-of-type {
+      display: inline-block;
+    }
+  }
+}
+
+/***********
+SIDE NAVBAR
+***********/
+
+@media (max-width: 960px) {
+  .sideNavbarBlock {
+    left: -30%;
+    width: 30%;
+  }
+
+  .contentWrapper {
+    &.sideNavbarOpen {
+      left: 30%;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .sideNavbarBlock {
+    left: -50%;
+    width: 50%;
+  }
+
+  .contentWrapper {
+    &.sideNavbarOpen {
+      left: 50%;
+    }
+  }
+}
+
+/***********
+MAIN
+***********/
+
+@media (max-width: 925px) {
+  main {
+    section.users {
+      .userBlock {
+        height: 500px;
+
+        .userImageBlock {
+          div {
+            top: 70px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  main {
+    section.users {
+      .userBlock {
+        height: 400px;
+        margin-bottom: 50px;
+
+        .userImageBlock {
+          div {
+            top: 35px;
+          }
+        }
+      }
+    }
+
+    section.chat {
+      height: 600px;
+
+      main.chat {
+        .chatMessagesBlock {
+          height: 65%;
+        }
+        .chatFormBlock {
+          height: 35%;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 650px) {
+  main {
+    section.usage {
+      main.usage {
+        padding: 10px 0px;
+      }
+    }
+  }
+}
+
+/***********
+ASIDE
+***********/
+
+@media (max-width: 1250px) {
+  aside {
+    padding-top: 50px;
+
+    section.activities {
+      height: 500px;
+    }
+  }
+}
+
+@media (max-width: 960px) {
+  aside {
+    section.settings {
+      main.settings {
+        .settingsBlock1 {
+          table {
+            tr {
+              .settings1Toggle {
+                .slideCheckboxBlock {
+                  left: 40%;
+                }
+              }
+            }
+          }
+        }
+        .settingsBlock3 {
+          input.radio ~ label {
+            left: 40%;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  aside {
+    display: none !important;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 50;
+    background-color: pink;
+
+    section.activities,
+    section.settings,
+    section.tasks {
+      display: none;
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      height: 100%;
+      width: 100%;
+    }
+  }
+}

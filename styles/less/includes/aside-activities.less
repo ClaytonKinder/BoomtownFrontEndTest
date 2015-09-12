@@ -1,0 +1,93 @@
+section.activities {
+  height: 440px;
+
+  header.activities {
+    height: 10%;
+  }
+
+  main.activities {
+    height: 90%;
+
+    .activityBlock {
+      height: 20%;
+      border-bottom: 2px solid @light-gray;
+
+      .activity {
+        width: 100%;
+
+        &.viewMore {
+          cursor: pointer;
+          background-color: @light-blue;
+          .transitionFast;
+
+          &:hover {
+            background-color: @blue;
+          }
+
+          .viewMoreText {
+            color: white;
+          }
+
+          .viewMoreNumber {
+            padding: 1px 3px;
+            background-color: white;
+            color: @orange;
+            font-size: 0.85rem;
+            font-weight: bolder;
+          }
+        }
+
+        .activityIcon {
+          width: 15%;
+
+          img {
+            height: 22.5px;
+            width: 22.5px;
+          }
+        }
+
+        .activityEvent {
+          width: 70%;
+
+          &.email {
+            color: @activity-email;
+          }
+
+          &.sms {
+            color: @activity-sms;
+          }
+
+          &.phone {
+            color: @activity-phone;
+          }
+
+          &.meeting {
+            .activityEventName {
+              color: @blue;
+            }
+            .activityEventDetails {
+              color: @gray;
+              font-style: italic;
+            }
+          }
+
+          .activityEventName {
+            font-weight: bolder;
+          }
+
+          .activityEventDetails {
+            font-size: 0.925rem;
+            white-space: nowrap;
+            width: 100%;
+            overflow: hidden;
+            text-overflow: ellipsis;
+          }
+        }
+
+        .activityTime {
+          width: 15%;
+        }
+      }
+    }
+  }
+}
