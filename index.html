@@ -3,6 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <title>Boomtown Dashboard</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700' rel='stylesheet' type='text/css'>
   <link rel="stylesheet" type="text/css" href="bower_components/uikit/css/uikit.almost-flat.css">
   <link rel="stylesheet" type="text/css" href="styles/css/styles.css">
@@ -10,7 +11,7 @@
 <body>
   <!-- NAVBAR -->
   <nav class="uk-navbar uk-grid">
-    <ul class="uk-navbar-nav uk-height-1-1 uk-width-large-1-4 uk-width-medium-1-4 uk-width-small-1-4 uk-grid">
+    <ul class="uk-navbar-nav uk-height-1-1 uk-width-large-1-4 uk-width-medium-1-4 uk-width-small-1-4 uk-width-xsmall-1-4 uk-grid">
       <li id="sideMenuToggle" class="uk-flex uk-flex-center uk-flex-middle uk-height-1-1 uk-width-large-2-10 uk-width-medium-2-10 uk-padding-remove">
         <i class="uk-icon-bars uk-align-center"></i>
       </li>
@@ -18,15 +19,18 @@
         boomtest
       </li>
     </ul>
-    <ul class="uk-navbar-nav uk-text-large uk-height-1-1 uk-width-large-3-4 uk-width-medium-3-4 uk-width-small-3-4 uk-grid">
-      <li class="uk-flex uk-flex-center uk-flex-middle uk-height-1-1 uk-width-1-3">
+    <ul class="uk-navbar-nav uk-text-large uk-height-1-1 uk-width-large-3-4 uk-width-medium-3-4 uk-width-small-3-4 uk-width-xsmall-3-4 uk-grid">
+      <li id="asideToggleActivities" class="asideToggle thisAsideClosed uk-flex uk-flex-center uk-flex-middle uk-height-1-1 uk-width-1-3">
         <i class="uk-icon-calendar"></i>
+        <i class="uk-icon-times"></i>
       </li>
-      <li class="uk-flex uk-flex-center uk-flex-middle uk-height-1-1 uk-width-1-3">
+      <li id="asideToggleTasks" class="asideToggle thisAsideClosed uk-flex uk-flex-center uk-flex-middle uk-height-1-1 uk-width-1-3">
         <i class="uk-icon-tasks"></i>
+        <i class="uk-icon-times"></i>
       </li>
-      <li class="uk-flex uk-flex-center uk-flex-middle uk-height-1-1 uk-width-1-3">
+      <li id="asideToggleSettings" class="asideToggle thisAsideClosed uk-flex uk-flex-center uk-flex-middle uk-height-1-1 uk-width-1-3">
         <i class="uk-icon-cog"></i>
+        <i class="uk-icon-times"></i>
       </li>
     </ul>
   </nav>
@@ -67,7 +71,7 @@
     <div class="contentBlock">
       <!-- HEADER -->
       <header class="hero uk-width-1-1 uk-border-rounded uk-flex uk-flex-center uk-flex-middle">
-        <div class="heroBlock uk-flex uk-flex-center uk-flex-middle uk-text-center">
+        <div class="heroBlock uk-width-xlarge-5-10 uk-width-large-3-5 uk-width-medium-4-5 uk-flex uk-flex-center uk-flex-middle uk-text-center">
           <h1 class="uk-h1">BoomTown Dashboard</h1>
         </div>
       </header>
@@ -157,61 +161,65 @@
 
           <!-- MAIN WEATHER -->
           <section class="weather uk-border-rounded uk-grid">
-            <div class="weatherBlock weatherBlock1 borderBottomLeftRounded borderTopLeftRounded uk-width-1-5 uk-height-1-1 uk-vertical-align uk-text-center">
-              <img class="uk-vertical-align-middle" src="assets/icons/sun.svg" alt="Sun icon">
-            </div>
-            <div class="weatherBlock weatherBlock2 uk-width-1-5 uk-height-1-1 uk-flex uk-flex-column uk-flex-center uk-flex-left">
-              <div class="weatherTemperature">75°</div>
-              <div class="weatherStatus">CLEAR</div>
-            </div>
-            <div class="weatherBlock weatherBlock3 uk-width-1-5 uk-height-1-1 uk-flex uk-flex-column uk-flex-center uk-flex-middle">
-              <div class="forecastBlock uk-text-center">
-                <div class="forecastTime uk-flex uk-flex-middle uk-flex-center">
-                  8AM
-                </div>
-                <div class="forecastIcon">
-                  <img src="assets/icons/rainy.svg" alt="Raincloud icon">
-                </div>
-                <div class="forecastPercentage uk-flex uk-flex-middle uk-flex-center">
-                  20%
-                </div>
-                <div class="forecastTemperature uk-flex uk-flex-middle uk-flex-center">
-                  67°
+            <section class="weather1 uk-width-medium-2-5 uk-width-small-1-5 uk-width-xsmall-1-5 uk-height-1-1 uk-grid">
+              <div class="weatherBlock weatherBlock1 borderBottomLeftRounded borderTopLeftRounded uk-width-medium-1-2 uk-width-small-1-1 uk-width-xsmall-1-1 uk-height-1-1 uk-vertical-align uk-text-center">
+                <img class="uk-vertical-align-middle" src="assets/icons/sun.svg" alt="Sun icon">
+              </div>
+              <div class="weatherBlock weatherBlock2 uk-text-center-small uk-width-medium-1-2 uk-width-small-1-1 uk-width-xsmall-1-1 uk-height-1-1 uk-flex uk-flex-column uk-flex-center uk-flex-left">
+                <div class="weatherTemperature">75°</div>
+                <div class="weatherStatus">CLEAR</div>
+              </div>
+            </section>
+            <section class="weather2 uk-width-medium-3-5 uk-width-small-4-5 uk-width-xsmall-4-5 uk-height-1-1 uk-grid">
+              <div class="weatherBlock weatherBlock3 uk-width-1-3 uk-height-1-1 uk-flex uk-flex-column uk-flex-center uk-flex-middle">
+                <div class="forecastBlock uk-text-center">
+                  <div class="forecastTime uk-flex uk-flex-middle uk-flex-center">
+                    8AM
+                  </div>
+                  <div class="forecastIcon">
+                    <img src="assets/icons/rainy.svg" alt="Raincloud icon">
+                  </div>
+                  <div class="forecastPercentage uk-flex uk-flex-middle uk-flex-center">
+                    20%
+                  </div>
+                  <div class="forecastTemperature uk-flex uk-flex-middle uk-flex-center">
+                    67°
+                  </div>
                 </div>
               </div>
-            </div>
-            <div class="weatherBlock weatherBlock4 uk-width-1-5 uk-height-1-1 uk-flex uk-flex-column uk-flex-center uk-flex-middle">
-              <div class="forecastBlock uk-text-center">
-                <div class="forecastTime uk-flex uk-flex-middle uk-flex-center">
-                  1PM
-                </div>
-                <div class="forecastIcon">
-                  <img src="assets/icons/rainy.svg" alt="Raincloud icon">
-                </div>
-                <div class="forecastPercentage uk-flex uk-flex-middle uk-flex-center">
-                  10%
-                </div>
-                <div class="forecastTemperature uk-flex uk-flex-middle uk-flex-center">
-                  70°
-                </div>
-              </div>
-            </div>
-            <div class="weatherBlock weatherBlock5 borderBottomRightRounded borderTopRightRounded uk-width-1-5 uk-height-1-1 uk-flex uk-flex-column uk-flex-center uk-flex-middle">
-              <div class="forecastBlock uk-text-center">
-                <div class="forecastTime uk-flex uk-flex-middle uk-flex-center">
-                  3PM
-                </div>
-                <div class="forecastIcon">
-                  <img src="assets/icons/cloudy.svg" alt="Cloud icon">
-                </div>
-                <div class="forecastPercentage uk-flex uk-flex-middle uk-flex-center">
-                  5%
-                </div>
-                <div class="forecastTemperature uk-flex uk-flex-middle uk-flex-center">
-                  74°
+              <div class="weatherBlock weatherBlock4 uk-width-1-3 uk-height-1-1 uk-flex uk-flex-column uk-flex-center uk-flex-middle">
+                <div class="forecastBlock uk-text-center">
+                  <div class="forecastTime uk-flex uk-flex-middle uk-flex-center">
+                    1PM
+                  </div>
+                  <div class="forecastIcon">
+                    <img src="assets/icons/rainy.svg" alt="Raincloud icon">
+                  </div>
+                  <div class="forecastPercentage uk-flex uk-flex-middle uk-flex-center">
+                    10%
+                  </div>
+                  <div class="forecastTemperature uk-flex uk-flex-middle uk-flex-center">
+                    70°
+                  </div>
                 </div>
               </div>
-            </div>
+              <div class="weatherBlock weatherBlock5 borderBottomRightRounded borderTopRightRounded uk-width-1-3 uk-height-1-1 uk-flex uk-flex-column uk-flex-center uk-flex-middle">
+                <div class="forecastBlock uk-text-center">
+                  <div class="forecastTime uk-flex uk-flex-middle uk-flex-center">
+                    3PM
+                  </div>
+                  <div class="forecastIcon">
+                    <img src="assets/icons/cloudy.svg" alt="Cloud icon">
+                  </div>
+                  <div class="forecastPercentage uk-flex uk-flex-middle uk-flex-center">
+                    5%
+                  </div>
+                  <div class="forecastTemperature uk-flex uk-flex-middle uk-flex-center">
+                    74°
+                  </div>
+                </div>
+              </div>
+            </section>
           </section>
           <!-- END MAIN WEATHER -->
 
@@ -227,30 +235,30 @@
             <main class="chat uk-grid">
               <div class="chatMessagesBlock uk-width-large-3-5 uk-width-medium-3-5 uk-width-small-5-5">
                 <div class="chatMessageIncoming uk-grid">
-                  <div class="incomingImage uk-width-large-2-10 uk-width-medium-2-10 uk-width-small-2-10">
+                  <div class="incomingImage uk-width-large-2-10 uk-width-medium-2-10 uk-width-small-2-10 uk-width-xsmall-2-10 uk-flex uk-flex-middle">
                     <div class="zachProfile userImage uk-border-circle uk-align-center"></div>
                   </div>
-                  <div class="incomingMessage uk-width-large-7-10 uk-width-medium-7-10 uk-width-small-7-10 uk-flex uk-flex-middle">
+                  <div class="incomingMessage uk-width-large-7-10 uk-width-medium-7-10 uk-width-small-7-10 uk-width-xsmall-7-10 uk-flex uk-flex-middle">
                     <p class="uk-border-rounded">
                       Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum, ipsa, blanditiis? Eius enim, laboriosam.
                     </p>
                   </div>
                 </div>
                 <div class="chatMessageOutgoing uk-margin-remove uk-grid">
-                  <div class="outgoingMessage uk-float-right uk-width-large-8-10 uk-width-medium-8-10 uk-width-small-8-10">
+                  <div class="outgoingMessage uk-float-right uk-width-large-8-10 uk-width-medium-8-10 uk-width-small-8-10 uk-width-xsmall-8-10">
                     <p class="uk-border-rounded">
                       Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit, non voluptates voluptatem? Totam sapiente deleniti nostrum, quidem ab mollitia excepturi placeat.
                     </p>
                   </div>
-                  <div class="outgoingImage uk-width-large-2-10 uk-width-medium-2-10 uk-width-small-2-10 uk-float-right uk-flex uk-flex-middle">
+                  <div class="outgoingImage uk-width-large-2-10 uk-width-medium-2-10 uk-width-small-2-10 uk-width-xsmall-2-10 uk-float-right uk-flex uk-flex-middle">
                     <div class="seanProfile userImage uk-border-circle uk-align-center"></div>
                   </div>
                 </div>
                 <div class="chatMessageIncoming uk-margin-remove uk-grid">
-                  <div class="incomingImage uk-width-large-2-10 uk-width-medium-2-10 uk-width-small-2-10">
+                  <div class="incomingImage uk-width-large-2-10 uk-width-medium-2-10 uk-width-small-2-10 uk-width-xsmall-2-10 uk-flex uk-flex-middle">
                     <div class="zachProfile userImage uk-border-circle uk-align-center"></div>
                   </div>
-                  <div class="incomingMessage uk-width-large-7-10 uk-width-medium-7-10 uk-width-small-7-10 uk-flex uk-flex-middle">
+                  <div class="incomingMessage uk-width-large-7-10 uk-width-medium-7-10 uk-width-small-7-10 uk-width-xsmall-7-10 uk-flex uk-flex-middle">
                     <p class="uk-border-rounded">
                       Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto deserunt doloremque excepturi eveniet.
                     </p>
@@ -382,10 +390,10 @@
           <!-- END USAGE CHAT -->
         </main>
 
-        <aside class="uk-width-xlarge-1-4 uk-width-large-1-1 uk-flex uk-flex-wrap uk-flex-space-around">
+        <aside class="asideDesktop uk-width-xlarge-1-4 uk-width-large-1-1 uk-flex uk-flex-wrap uk-flex-space-around">
           <!-- ASIDE ACTIVITIES -->
           <section class="activities asideSectionStyling uk-border-rounded uk-width-xlarge-1-1 uk-width-large-4-10">
-            <header class="activities asidePadding uk-flex uk-flex-bottom uk-flex-space-between">
+            <header class="activities asidePadding uk-flex uk-flex-space-between">
               <h2 class="uk-margin-remove">Latest Activities</h2>
               <span class="smallGray">4/14</span>
             </header>

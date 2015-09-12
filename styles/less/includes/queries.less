@@ -60,6 +60,39 @@ SIDE NAVBAR
 }
 
 /***********
+HEADER
+***********/
+
+@media (max-width: 768px) {
+  header.hero {
+    .heroBlock {
+      border-left: none;
+      border-right: none;
+    }
+  }
+}
+
+@media (max-width: 600px) {
+  header.hero {
+    .heroBlock {
+      height: 15%;
+      h1 {
+        font-size: 2.25rem;
+      }
+    }
+  }
+}
+
+@media (max-width: 450px) {
+  header.hero {
+    .heroBlock {
+      height: 25%;
+      padding: 10px 0;
+    }
+  }
+}
+
+/***********
 MAIN
 ***********/
 
@@ -94,6 +127,38 @@ MAIN
       }
     }
 
+    section.weather {
+      .weatherBlock1,
+      .weatherBlock2 {
+        height: 50%;
+      }
+
+      .weatherBlock1 {
+        border-bottom-left-radius: 0;
+
+        img {
+          height: 100%;
+          width: 100%;
+        }
+      }
+
+      .weatherBlock2 {
+        border-right: none;
+        padding-left: 0;
+        background-color: @light-blue;
+        border-bottom-left-radius: 4px;
+        color: white;
+
+        .weatherTemperature {
+          font-size: 3rem;
+        }
+
+        .weatherStatus {
+          left: -3%;
+        }
+      }
+    }
+
     section.chat {
       height: 600px;
 
@@ -114,6 +179,85 @@ MAIN
     section.usage {
       main.usage {
         padding: 10px 0px;
+
+        table {
+          tr:last-of-type {
+            td {
+              &:first-of-type {
+                border-bottom-left-radius: 4px;
+              }
+              &:last-of-type {
+                border-bottom-right-radius: 4px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 500px) {
+  main {
+    section.chat {
+      height: 650px;
+      header.chat {
+        height: 12.5%;
+
+        h2 {
+          width: 45%;
+        }
+
+        div {
+          width: 45%;
+          text-align: center;
+
+          img {
+            position: relative;
+            left: 10px;
+          }
+        }
+      }
+
+      main.chat {
+        height: 87.5%;
+
+        .chatMessagesBlock {
+          height: 55%;
+          overflow-y: scroll;
+
+          .chatMessageIncoming,
+          .chatMessageOutgoing {
+
+            .outgoingImage,
+            .incomingImage {
+              div {
+                height: 50px;
+                width: 50px;
+              }
+            }
+          }
+        }
+
+        .chatFormBlock {
+          height: 45%;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 480px) {
+  main {
+    section.weather {
+      .weatherBlock2 {
+        .weatherTemperature {
+          font-size: 2.5rem;
+        }
+        .weatherStatus {
+          font-size: 1.25rem;
+          top: 2.5%;
+        }
       }
     }
   }
@@ -160,26 +304,72 @@ ASIDE
 
 @media (max-width: 768px) {
   aside {
-    display: none !important;
-    position: absolute;
+    opacity: 0;
+    position: fixed;
     top: 0;
     right: 0;
     bottom: 0;
     left: 0;
     z-index: 50;
-    background-color: pink;
+    height: auto;
+    min-height: 100vh;
+    background-color: white;
+
+    &.sideNavbarOpen {
+      left: 50%;
+    }
+
+    .asideSectionStyling {
+      box-shadow: none;
+      margin-bottom: none;
+    }
+
+    &.asideDesktop {
+      display: none;
+      opacity: 0;
+    }
+
+    &.asideOpen {
+      opacity: 1;
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+    }
 
     section.activities,
     section.settings,
     section.tasks {
       display: none;
-      position: absolute;
-      top: 0;
-      right: 0;
-      bottom: 0;
-      left: 0;
       height: 100%;
       width: 100%;
+
+      header.activities,
+      header.tasks {
+        height: 7.5%;
+      }
+
+      header.activities {
+        padding-top: 15px;
+        padding-bottom: 15px;
+      }
+
+      main.activities,
+      main.tasks {
+        height: 92.5%;
+      }
+    }
+
+    section.settings {
+      main.settings {
+        .settingsBlock3 {
+          table {
+            input.radio:checked ~ label:after {
+              top: -1.15px;
+            }
+          }
+        }
+      }
     }
   }
 }

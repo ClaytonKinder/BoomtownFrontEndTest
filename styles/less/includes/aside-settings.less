@@ -166,59 +166,56 @@ section.settings {
 
       table {
         height: 80%;
-      }
 
-      /* hide input */
-      input.radio:empty {
-        margin-left: -9999px;
-      }
+        input.radio:empty {
+          margin-left: -9999px;
+        }
 
-      .input.radio ~ label {
-        position: relative;
-      }
+        .input.radio ~ label {
+          position: relative;
+        }
 
-      /* style label */
-      input.radio:empty ~ label {
-        position: relative;
-        float: left;
-        line-height: 1.255rem;
-        text-indent: 2rem;
-        cursor: pointer;
-        -webkit-user-select: none;
-        -moz-user-select: none;
-        -ms-user-select: none;
-        user-select: none;
-      }
+        input.radio:empty ~ label {
+          position: relative;
+          float: left;
+          line-height: 1.255rem;
+          text-indent: 2rem;
+          cursor: pointer;
+          -webkit-user-select: none;
+          -moz-user-select: none;
+          -ms-user-select: none;
+          user-select: none;
+        }
 
-      input.radio:empty ~ label:before {
-        position: absolute;
-        display: block;
-        top: 0;
-        bottom: 0;
-        left: 0;
-        content: '';
-        width: 17.5px;
-        height: 17.5px;
-        background: white;
-        border: 2px solid @gray;
-        border-radius: 50%;
-      }
+        input.radio:empty ~ label:before {
+          position: absolute;
+          display: block;
+          top: 0;
+          bottom: 0;
+          left: 0;
+          content: '';
+          width: 17.5px;
+          height: 17.5px;
+          background: white;
+          border: 2px solid @gray;
+          border-radius: 50%;
+        }
 
-      /* toggle on */
-      input.radio:checked ~ label:after {
-        content:'●';
-        display: block;
-        position: absolute;
-        width: 10px;
-        height: 10px;
-        font-size: 1.3rem;
-        top: -1.26px;
-        left: -24.5px;
-        color: @dark-blue;
-      }
+        input.radio:checked ~ label:after {
+          content:'●';
+          display: block;
+          position: absolute;
+          width: 10px;
+          height: 10px;
+          font-size: 1.3rem;
+          top: -1.26px;
+          left: -24.5px;
+          color: @dark-blue;
+        }
 
-      input.radio:checked ~ label {
-        color: #777;
+        input.radio:checked ~ label {
+          color: #777;
+        }
       }
     }
   }

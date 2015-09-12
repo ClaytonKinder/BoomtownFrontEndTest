@@ -25,6 +25,16 @@
 ****************************/
 
 aside {
+  display: none;
+  .transitionMed;
+
+  &.asideDesktop {
+    opacity: 1;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+  }
 
   .asideSectionStyling {
     background-color: white;
@@ -39,6 +49,14 @@ aside {
   .smallGray {
     font-size: 0.85rem;
     color: @gray;
+  }
+
+  section.activities,
+  section.tasks,
+  section.settings {
+    &.asideOpen {
+      display: block;
+    }
   }
 
   /***********

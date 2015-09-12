@@ -46,6 +46,28 @@ nav.uk-navbar {
       &:hover {
         background-color: @blue;
       }
+
+      i {
+        &:first-of-type {
+          display: block;
+        }
+        &:last-of-type {
+          display: none;
+        }
+      }
+
+      &.thisAsideOpen {
+        background-color: @blue;
+
+        i {
+          &:first-of-type {
+            display: none;
+          }
+          &:last-of-type {
+            display: block;
+          }
+        }
+      }
     }
   }
 }
