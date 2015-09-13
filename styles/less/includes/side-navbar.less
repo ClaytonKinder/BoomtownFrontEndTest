@@ -9,10 +9,13 @@
   left: -25%;
   width: 25%;
   z-index: 99;
+  -webkit-transform:translateZ(0);
+  transform: translateZ(0);
   .transitionMed;
 
   &.sideNavbarOpen {
     left: 0;
+    .transitionMed;
   }
 
   > * {
@@ -28,9 +31,6 @@
     background-color: white;
     .transitionMed;
 
-    &.sideNavbarOpen {
-      left: 0;
-    }
 
     ul {
       list-style-type: none;
@@ -69,6 +69,8 @@
   left: 0;
   opacity: 0;
   z-index: 98;
+  -webkit-transform:translateZ(0);
+  transform: translateZ(0);
   .transitionMed;
 
   &.sideNavbarOpen {

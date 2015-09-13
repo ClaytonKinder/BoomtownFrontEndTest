@@ -1,20 +1,6 @@
-
-
-// Toggles the side-menu
-$('body').on('click', '#sideMenuToggle', function(){
-  $('.sideNavbarBlock').toggleClass('sideNavbarOpen');
-  $('.sideNavbarMask').toggleClass('sideNavbarOpen');
-  $('aside').toggleClass('sideNavbarOpen');
-  $('.contentWrapper').toggleClass('sideNavbarOpen');
-})
-
-// Clicking the opaque area while side-menu is open closes the side-menu
-$('body').on('click', '.sideNavbarMask', function(){
-  $('.sideNavbarBlock').removeClass('sideNavbarOpen');
-  $('.sideNavbarMask').removeClass('sideNavbarOpen');
-  $('aside').removeClass('sideNavbarOpen');
-  $('.contentWrapper').removeClass('sideNavbarOpen');
-})
+/***********
+FUNCTIONS
+***********/
 
 var asideMenuToggle = function(asideToggle, asideSection) {
     var at = asideToggle;
@@ -47,6 +33,38 @@ var asideMenuToggle = function(asideToggle, asideSection) {
     }
 }
 
+/***********
+FEATURE DETECTION
+***********/
+
+function isSafari() {
+  return /^((?!chrome).)*safari/i.test(navigator.userAgent);
+}
+
+if (isSafari()) {
+  $('nav.uk-navbar ul:last-of-type').addClass('safari');
+}
+
+/***********
+CLICK EVENTS
+***********/
+
+// Toggles the side-menu
+$('body').on('click', '#sideMenuToggle', function(){
+  $('.sideNavbarBlock').toggleClass('sideNavbarOpen');
+  $('.sideNavbarMask').toggleClass('sideNavbarOpen');
+  $('aside').toggleClass('sideNavbarOpen');
+  $('.contentWrapper').toggleClass('sideNavbarOpen');
+})
+
+// Clicking the opaque area while side-menu is open closes the side-menu
+$('body').on('click', '.sideNavbarMask', function(){
+  $('.sideNavbarBlock').removeClass('sideNavbarOpen');
+  $('.sideNavbarMask').removeClass('sideNavbarOpen');
+  $('aside').removeClass('sideNavbarOpen');
+  $('.contentWrapper').removeClass('sideNavbarOpen');
+})
+
 // Clicking navbar icons open the appropriate aside block
 $('body').on('click', '.asideToggle', function(){
   if ($(this).is('#asideToggleActivities')) {
@@ -57,6 +75,10 @@ $('body').on('click', '.asideToggle', function(){
     asideMenuToggle($('#asideToggleSettings'), 'settings');
   }
 })
+
+/***********
+CHANGE EVENTS
+***********/
 
 // Controls the custom checkboxes in the first section of the sidebar settings
 $('body').on('change', '.slideCheckbox', function(){

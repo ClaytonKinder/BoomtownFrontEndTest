@@ -6,7 +6,7 @@
 GENERAL
 ***********/
 
-@media (max-width: 480px) {
+@media (max-width: 600px) {
   .contentBlock {
     padding: 95px 5px 50px;
   }
@@ -19,12 +19,17 @@ NAVBAR
 @media (max-width: 768px) {
   nav.uk-navbar {
     ul:first-of-type {
+      display: inline-block;
       li:last-of-type {
         display: none;
       }
     }
     ul:last-of-type {
       display: inline-block;
+
+      &.safari {
+        width: 74.5%;
+      }
     }
   }
 }
@@ -54,7 +59,9 @@ SIDE NAVBAR
 
   .contentWrapper {
     &.sideNavbarOpen {
-      left: 50%;
+      -webkit-transform: translateX(50%);
+      -ms-transform: translateX(50%);
+      transform: translateX(50%);
     }
   }
 }
@@ -74,8 +81,10 @@ HEADER
 
 @media (max-width: 600px) {
   header.hero {
+    height: 200px;
+
     .heroBlock {
-      height: 15%;
+      height: 30%;
       h1 {
         font-size: 2.25rem;
       }
@@ -86,7 +95,7 @@ HEADER
 @media (max-width: 450px) {
   header.hero {
     .heroBlock {
-      height: 25%;
+      height: 40%;
       padding: 10px 0;
     }
   }
@@ -271,6 +280,12 @@ ASIDE
   aside {
     padding-top: 50px;
 
+    section.activities,
+    section.settings,
+    section.tasks {
+      .marginBottom;
+    }
+
     section.activities {
       height: 500px;
     }
@@ -312,11 +327,11 @@ ASIDE
     left: 0;
     z-index: 50;
     height: auto;
-    min-height: 100vh;
+    max-height: 100vh;
     background-color: white;
 
     &.sideNavbarOpen {
-      left: 50%;
+      left: 0;
     }
 
     .asideSectionStyling {
