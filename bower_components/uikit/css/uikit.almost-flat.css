@@ -8264,7 +8264,6 @@ a.uk-thumbnail:focus {
    Component: Flex
  ========================================================================== */
 .uk-flex {
-  display: table;
   display: -ms-flexbox;
   display: -webkit-flex;
   display: -webkit-box;
@@ -8295,7 +8294,6 @@ a.uk-thumbnail:focus {
   align-items: flex-start;
 }
 .uk-flex-middle {
-  vertical-align: middle;
   -ms-flex-align: center;
   -webkit-align-items: center;
   align-items: center;

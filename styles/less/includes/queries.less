@@ -238,7 +238,7 @@ MAIN
 
           img {
             position: relative;
-            left: 10px;
+            left: 5px;
           }
         }
       }
@@ -274,13 +274,56 @@ MAIN
 @media (max-width: 480px) {
   main {
     section.weather {
+      height: 300px;
+
+      .weather1 {
+        height: 25%;
+      }
+
+      .weather2 {
+        height: 75%;
+      }
+
+      .weatherBlock1,
       .weatherBlock2 {
+        height: 100%;
+      }
+
+      .weatherBlock2 {
+        border-bottom-left-radius: 0;
+        border-top-right-radius: 4px;
+
         .weatherTemperature {
           font-size: 2.5rem;
         }
         .weatherStatus {
           font-size: 1.25rem;
           top: 2.5%;
+        }
+      }
+
+      .weatherBlock3,
+      .weatherBlock4,
+      .weatherBlock5 {
+        .forecastBlock {
+          .forecastIcon {
+            display: -webkit-box;
+            display: -webkit-flex;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-box-pack: center;
+            -webkit-justify-content: center;
+            -ms-flex-pack: center;
+                    justify-content: center;
+            -webkit-box-align: center;
+            -webkit-align-items: center;
+            -ms-flex-align: center;
+                    align-items: center;
+
+            img {
+              height: 75%;
+            }
+          }
         }
       }
     }
