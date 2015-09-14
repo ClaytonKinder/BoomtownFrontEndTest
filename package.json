@@ -13,7 +13,9 @@
     "gulp-plumber": "^1.0.1",
     "gulp-livereload": "^3.8.0"
   },
-  "devDependencies": {},
+  "devDependencies": {
+    "gulp-minify": "0.0.5"
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },

@@ -7,7 +7,14 @@ var plumber = require('gulp-plumber');
 var path = require('path');
 var browserSync = require('browser-sync');
 var livereload = require('gulp-livereload');
+var minify = require('gulp-minify');
 var reload = browserSync.reload;
+
+gulp.task('compress', function() {
+  gulp.src('js/*.js')
+    .pipe(minify())
+    .pipe(gulp.dest('js'))
+});
 
 gulp.task('less', function() {
   return gulp.src('./styles/less/styles.less')  // only compile the entry file
@@ -35,4 +42,4 @@ gulp.task('watchLess', function() {
     gulp.watch('./**/*.less', ['less']);
 });
 
-gulp.task('default', ['serve', 'watchLess']);
+gulp.task('default', ['serve', 'watchLess', 'compress']);
