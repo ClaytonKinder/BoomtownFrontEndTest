@@ -560,7 +560,7 @@ iframe {
   border-left: 1px solid #dddddd;
 }
 /* Tablet and bigger */
-@media (min-width: 768px) {
+@media (min-width: 769px) {
   .uk-grid-divider > [class*='uk-width-medium-']:not(.uk-width-medium-1-1):nth-child(n+2) {
     border-left: 1px solid #dddddd;
   }
@@ -687,7 +687,7 @@ iframe {
   }
 }
 /* Tablet and bigger */
-@media (min-width: 768px) {
+@media (min-width: 769px) {
   .uk-grid-width-medium-1-2 > * {
     width: 50%;
   }
@@ -959,7 +959,7 @@ iframe {
   }
 }
 /* Tablet and bigger */
-@media (min-width: 768px) {
+@media (min-width: 769px) {
   /* Whole */
   .uk-width-medium-1-1 {
     width: 100%;
@@ -1166,7 +1166,7 @@ iframe {
  * Works only with `uk-width-medium-*`
  */
 /* Tablet and bigger */
-@media (min-width: 768px) {
+@media (min-width: 769px) {
   [class*='uk-push-'],
   [class*='uk-pull-'] {
     position: relative;
@@ -1493,7 +1493,7 @@ iframe {
   padding-bottom: 20px;
 }
 /* Phone landscape and bigger */
-@media (min-width: 768px) {
+@media (min-width: 769px) {
   .uk-block {
     padding-top: 50px;
     padding-bottom: 50px;
@@ -1526,7 +1526,7 @@ iframe {
   padding-bottom: 20px;
 }
 /* Tablets and bigger */
-@media (min-width: 768px) {
+@media (min-width: 769px) {
   .uk-block-large {
     padding-top: 50px;
     padding-bottom: 50px;
@@ -1711,7 +1711,7 @@ iframe {
   margin-top: 25px;
 }
 /* Tablet and bigger */
-@media (min-width: 768px) {
+@media (min-width: 769px) {
   .uk-comment-list .uk-comment + ul {
     padding-left: 100px;
   }
@@ -2806,7 +2806,7 @@ html:not(.uk-touch) .uk-nav-offcanvas ul a:hover {
 /* Modifier: 'tab-left', 'tab-right'
  ========================================================================== */
 /* Tablet and bigger */
-@media (min-width: 768px) {
+@media (min-width: 769px) {
   .uk-tab-left,
   .uk-tab-right {
     border-bottom: none;
@@ -2885,7 +2885,7 @@ html:not(.uk-touch) .uk-nav-offcanvas ul a:hover {
 /* Modifier: `uk-tab-left', `uk-tab-right'
     ========================================================================== */
 /* Tablet and bigger */
-@media (min-width: 768px) {
+@media (min-width: 769px) {
   /*
          * Modifier: `uk-tab-left'
          */
@@ -3034,7 +3034,7 @@ html:not(.uk-touch) .uk-nav-offcanvas ul a:hover {
 /* Modifier: `uk-description-list-horizontal`
  ========================================================================== */
 /* Tablet and bigger */
-@media (min-width: 768px) {
+@media (min-width: 769px) {
   .uk-description-list-horizontal {
     overflow: hidden;
   }
@@ -7166,7 +7166,7 @@ a.uk-thumbnail:focus {
   margin-top: 15px;
 }
 /* Tablet and bigger */
-@media (min-width: 768px) {
+@media (min-width: 769px) {
   /*
      * Horizontal gutter
      */
@@ -7413,7 +7413,7 @@ a.uk-thumbnail:focus {
 /* Modifier: `uk-modal-dialog-large`
  ========================================================================== */
 /* Tablet and bigger */
-@media (min-width: 768px) {
+@media (min-width: 769px) {
   .uk-modal-dialog-large {
     width: 930px;
   }
@@ -7827,7 +7827,7 @@ a.uk-thumbnail:focus {
   float: right;
 }
 /* Tablet and bigger */
-@media (min-width: 768px) {
+@media (min-width: 769px) {
   .uk-align-medium-left {
     margin-right: 15px;
     margin-bottom: 15px;
@@ -8052,7 +8052,7 @@ a.uk-thumbnail:focus {
   line-height: 42px;
 }
 /* Tablet and bigger */
-@media (min-width: 768px) {
+@media (min-width: 769px) {
   .uk-heading-large {
     font-size: 52px;
     line-height: 64px;
@@ -8212,7 +8212,7 @@ a.uk-thumbnail:focus {
   }
 }
 /* Tablets portrait */
-@media (min-width: 768px) and (max-width: 959px) {
+@media (min-width: 769px) and (max-width: 959px) {
   .uk-visible-small {
     display: none !important;
   }
@@ -8419,7 +8419,7 @@ a.uk-thumbnail:focus {
   }
 }
 /* Tablet and bigger */
-@media (min-width: 768px) {
+@media (min-width: 769px) {
   .uk-flex-order-first-medium {
     -ms-flex-order: -1;
     -webkit-order: -1;
