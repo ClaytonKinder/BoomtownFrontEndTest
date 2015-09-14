@@ -94,7 +94,7 @@ LOAD EVENTS
 ***********/
 
 $(document).ready(function(){
-  $('body').addClass('pageLoaded');
+  
 })
 
 /***********
