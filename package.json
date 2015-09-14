@@ -4,17 +4,15 @@
   "description": "Front-end test for Boomtown",
   "main": "app/index.html",
   "dependencies": {
-    "gulp-autoprefixer": "^3.0.1",
-    "gulp": "^3.9.0",
     "browser-sync": "^2.9.3",
+    "gulp": "^3.9.0",
+    "gulp-autoprefixer": "^3.0.1",
     "gulp-less": "^3.0.3",
+    "gulp-livereload": "^3.8.0",
+    "gulp-minify": "0.0.5",
     "gulp-minify-css": "^1.2.1",
-    "gulp-watch": "^4.3.5",
     "gulp-plumber": "^1.0.1",
-    "gulp-livereload": "^3.8.0"
-  },
-  "devDependencies": {
-    "gulp-minify": "0.0.5"
+    "gulp-watch": "^4.3.5"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"

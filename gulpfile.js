@@ -11,9 +11,11 @@ var minify = require('gulp-minify');
 var reload = browserSync.reload;
 
 gulp.task('compress', function() {
-  gulp.src('js/*.js')
-    .pipe(minify())
-    .pipe(gulp.dest('js'))
+  gulp.src('./js/app.js')
+    .pipe(minify({
+      ignoreFiles: ['-min.js']
+    }))
+    .pipe(gulp.dest('./js/min'))
 });
 
 gulp.task('less', function() {
@@ -37,9 +39,10 @@ gulp.task('serve', function() {
   gulp.watch(['*.html', 'styles/**/*.less', 'styles/**/*.css', 'scripts/**/*.js'], {cwd: 'app'}, reload);
 });
 
-gulp.task('watchLess', function() {
+gulp.task('watch', function() {
   // Watch all the .less files, then run the less task
     gulp.watch('./**/*.less', ['less']);
+    gulp.watch('./js/app.js', ['compress']);
 });
 
-gulp.task('default', ['serve', 'watchLess', 'compress']);
+gulp.task('default', ['serve', 'watch', 'compress']);
