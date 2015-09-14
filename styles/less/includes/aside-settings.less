@@ -111,6 +111,7 @@ section.settings {
                 position: absolute;
                 left: -9999px;
               }
+
               .customCheckbox:not(:checked) + label,
               .customCheckbox:checked + label {
                 position: relative;
@@ -121,13 +122,14 @@ section.settings {
                 -ms-user-select: none;
               }
 
-
               .customCheckbox:not(:checked) + label:before,
               .customCheckbox:checked + label:before {
                 content: '';
                 position: absolute;
-                left:0; top: 2px;
-                width: 17px; height: 17px;
+                left:0;
+                top: 2px;
+                width: 17px;
+                height: 17px;
                 border: 2px solid @gray;
                 background: white;
               }
@@ -172,7 +174,7 @@ section.settings {
           margin-left: -9999px;
         }
 
-        .input.radio ~ label {
+        input.radio ~ label {
           position: relative;
         }
 
