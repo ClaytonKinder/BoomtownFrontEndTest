@@ -78,6 +78,7 @@ FEATURE DETECTION
 
 if (isSafari()) {
   $('nav.uk-navbar ul:last-of-type').addClass('safari');
+  $('.contentWrapper').addClass('safari');
 }
 
 if (isInternetExplorer()) {

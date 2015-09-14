@@ -46,7 +46,15 @@ SIDE NAVBAR
 
   .contentWrapper {
     &.sideNavbarOpen {
-      left: 30%;
+      -webkit-transform: translateX(30%);
+      -ms-transform: translateX(30%);
+      transform: translateX(30%);
+    }
+    &.mobile.sideNavbarOpen,
+    &.safari.sideNavbarOpen {
+      -webkit-transform: translateX(0);
+      -ms-transform: translateX(0);
+      transform: translateX(0);
     }
   }
 }
@@ -58,10 +66,16 @@ SIDE NAVBAR
   }
 
   .contentWrapper {
-    &:not(.mobile).sideNavbarOpen {
+    &.sideNavbarOpen {
       -webkit-transform: translateX(50%);
       -ms-transform: translateX(50%);
       transform: translateX(50%);
+    }
+    &.mobile.sideNavbarOpen,
+    &.safari.sideNavbarOpen {
+      -webkit-transform: translateX(0);
+      -ms-transform: translateX(0);
+      transform: translateX(0);
     }
   }
 }
@@ -73,10 +87,16 @@ SIDE NAVBAR
   }
 
   .contentWrapper {
-    &:not(.mobile).sideNavbarOpen {
+    &.sideNavbarOpen {
       -webkit-transform: translateX(75%);
       -ms-transform: translateX(75%);
       transform: translateX(75%);
+    }
+    &.mobile.sideNavbarOpen,
+    &.safari.sideNavbarOpen {
+      -webkit-transform: translateX(0);
+      -ms-transform: translateX(0);
+      transform: translateX(0);
     }
   }
 }

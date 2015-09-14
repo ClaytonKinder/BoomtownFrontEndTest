@@ -8265,8 +8265,8 @@ a.uk-thumbnail:focus {
  ========================================================================== */
 .uk-flex {
   display: -ms-flexbox;
-  display: -webkit-flex;
   display: -webkit-box;
+  display: -webkit-flex;
   display: flex;
 }
 .uk-flex-inline {

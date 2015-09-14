@@ -127,8 +127,11 @@ body {
 
 .contentWrapper {
   .transitionMed;
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0);
 
-  &:not(.mobile).sideNavbarOpen {
+  &:not(.mobile).sideNavbarOpen,
+  &:not(.safari).sideNavbarOpen {
     -webkit-transform: translateX(25%);
     -ms-transform: translateX(25%);
     transform: translateX(25%);
