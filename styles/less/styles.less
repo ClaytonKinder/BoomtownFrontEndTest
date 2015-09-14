@@ -128,8 +128,7 @@ body {
 .contentWrapper {
   .transitionMed;
 
-  &.sideNavbarOpen {
-    left: 25%;
+  &:not(.mobile).sideNavbarOpen {
     -webkit-transform: translateX(25%);
     -ms-transform: translateX(25%);
     transform: translateX(25%);

@@ -16,7 +16,7 @@ GENERAL
 NAVBAR
 ***********/
 
-@media (max-width: 768px) {
+@media (max-width: 769px) {
   nav.uk-navbar {
     ul:first-of-type {
       display: inline-block;
@@ -38,7 +38,7 @@ NAVBAR
 SIDE NAVBAR
 ***********/
 
-@media (max-width: 960px) {
+@media (max-width: 961px) {
   .sideNavbarBlock {
     left: -30%;
     width: 30%;
@@ -51,17 +51,32 @@ SIDE NAVBAR
   }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 769px) {
   .sideNavbarBlock {
     left: -50%;
     width: 50%;
   }
 
   .contentWrapper {
-    &.sideNavbarOpen {
+    &:not(.mobile).sideNavbarOpen {
       -webkit-transform: translateX(50%);
       -ms-transform: translateX(50%);
       transform: translateX(50%);
+    }
+  }
+}
+
+@media (max-width: 481px) {
+  .sideNavbarBlock {
+    left: -75%;
+    width: 75%;
+  }
+
+  .contentWrapper {
+    &:not(.mobile).sideNavbarOpen {
+      -webkit-transform: translateX(75%);
+      -ms-transform: translateX(75%);
+      transform: translateX(75%);
     }
   }
 }
@@ -70,7 +85,7 @@ SIDE NAVBAR
 HEADER
 ***********/
 
-@media (max-width: 768px) {
+@media (max-width: 769px) {
   header.hero {
     .heroBlock {
       border-left: none;
@@ -121,7 +136,7 @@ MAIN
   }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 769px) {
   main {
     section.users {
       .userBlock {
@@ -279,7 +294,6 @@ ASIDE
 @media (max-width: 1250px) {
   aside {
     padding-top: 50px;
-
     section.activities,
     section.settings,
     section.tasks {
@@ -292,7 +306,7 @@ ASIDE
   }
 }
 
-@media (max-width: 960px) {
+@media (max-width: 961px) {
   aside {
     section.settings {
       main.settings {
@@ -317,7 +331,7 @@ ASIDE
   }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 769px) {
   aside {
     opacity: 0;
     position: fixed;
@@ -379,8 +393,44 @@ ASIDE
       main.settings {
         .settingsBlock3 {
           table {
+            input.radio~label {
+              left: 37.5%;
+            }
+
             input.radio:checked ~ label:after {
               top: -1.15px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 501px) {
+  aside {
+    section.settings {
+      main.settings {
+        .settingsBlock3 {
+          table {
+            input.radio~label {
+              left: 35%;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 401px) {
+  aside {
+    section.settings {
+      main.settings {
+        .settingsBlock3 {
+          table {
+            input.radio~label {
+              left: 34.5%;
             }
           }
         }

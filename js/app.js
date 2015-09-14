@@ -33,16 +33,59 @@ var asideMenuToggle = function(asideToggle, asideSection) {
     }
 }
 
-/***********
-FEATURE DETECTION
-***********/
-
 function isSafari() {
   return /^((?!chrome).)*safari/i.test(navigator.userAgent);
 }
 
+function isInternetExplorer() {
+  var ua = window.navigator.userAgent;
+  var old_ie = ua.indexOf('MSIE ');
+  var new_ie = ua.indexOf('Trident/');
+
+  if ((old_ie > -1) || (new_ie > -1)) {
+    console.log('ie');
+    return true;
+  } else {
+    console.log('not ie');
+    return false;
+  }
+}
+
+var isMobile = {
+    Android: function() {
+        return navigator.userAgent.match(/Android/i);
+    },
+    BlackBerry: function() {
+        return navigator.userAgent.match(/BlackBerry/i);
+    },
+    iOS: function() {
+        return navigator.userAgent.match(/iPhone|iPad|iPod/i);
+    },
+    Opera: function() {
+        return navigator.userAgent.match(/Opera Mini/i);
+    },
+    Windows: function() {
+        return navigator.userAgent.match(/IEMobile/i);
+    },
+    any: function() {
+        return (isMobile.Android() || isMobile.BlackBerry() || isMobile.iOS() || isMobile.Opera() || isMobile.Windows());
+    }
+};
+
+/***********
+FEATURE DETECTION
+***********/
+
 if (isSafari()) {
   $('nav.uk-navbar ul:last-of-type').addClass('safari');
+}
+
+if (isInternetExplorer()) {
+  $('nav.uk-navbar ul:first-of-type li:first-of-type').addClass('internetExplorer');
+}
+
+if (isMobile.any()) {
+  $('.contentWrapper').addClass('mobile');
 }
 
 /***********
@@ -55,6 +98,11 @@ $('body').on('click', '#sideMenuToggle', function(){
   $('.sideNavbarMask').toggleClass('sideNavbarOpen');
   $('aside').toggleClass('sideNavbarOpen');
   $('.contentWrapper').toggleClass('sideNavbarOpen');
+  $('.asideToggle').removeClass('thisAsideOpen');
+  $('section.activities').removeClass('thisAsideOpen');
+  $('section.settings').removeClass('thisAsideOpen');
+  $('section.tasks').removeClass('asideOpen');
+  $('aside').removeClass('asideOpen');
 })
 
 // Clicking the opaque area while side-menu is open closes the side-menu
