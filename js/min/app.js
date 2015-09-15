@@ -37,6 +37,12 @@ function isSafari() {
   return /^((?!chrome).)*safari/i.test(navigator.userAgent);
 }
 
+function isDefaultAndroid() {
+  var nua = navigator.userAgent.toLowerCase();
+  return ((nua.indexOf('mozilla/5.0') > -1 && nua.indexOf('android ') > -1 && nua.indexOf('applewebkit') > -1) && !(nua.indexOf('chrome') > -1));
+
+}
+
 function isInternetExplorer() {
   var ua = window.navigator.userAgent;
   var old_ie = ua.indexOf('MSIE ');
@@ -76,9 +82,9 @@ var isMobile = {
 FEATURE DETECTION
 ***********/
 
-if (isSafari()) {
-  $('nav.uk-navbar ul:last-of-type').addClass('safari');
-  $('.contentWrapper').addClass('safari');
+if (isSafari() || isDefaultAndroid()) {
+  $('nav.uk-navbar ul:last-of-type').addClass('webkit');
+  $('.contentWrapper').addClass('webkit');
 }
 
 if (isInternetExplorer()) {
@@ -94,7 +100,7 @@ LOAD EVENTS
 ***********/
 
 $(document).ready(function(){
-  
+
 })
 
 /***********
